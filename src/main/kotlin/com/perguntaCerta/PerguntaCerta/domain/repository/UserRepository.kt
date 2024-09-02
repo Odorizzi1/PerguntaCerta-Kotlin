@@ -1,6 +1,6 @@
-package com.perguntaCerta.PerguntaCerta.Domain.repository
+package com.perguntaCerta.PerguntaCerta.domain.repository
 
-import com.perguntaCerta.PerguntaCerta.Domain.Model.UserModel
+import com.perguntaCerta.PerguntaCerta.domain.model.UserModel
 import org.springframework.data.repository.CrudRepository
 
 

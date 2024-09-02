@@ -1,11 +1,9 @@
-package com.perguntaCerta.PerguntaCerta.Domain.controller
+package com.perguntaCerta.PerguntaCerta.domain.controller
 
 import com.perguntaCerta.PerguntaCerta.Application.Services.UserService
-import com.perguntaCerta.PerguntaCerta.Domain.Model.UserModel
+import com.perguntaCerta.PerguntaCerta.domain.model.UserModel
 import com.perguntaCerta.PerguntaCerta.exception.UserCreationException
 import jakarta.validation.Valid
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping

@@ -1,8 +1,8 @@
 package com.perguntaCerta.PerguntaCerta.Application.Services
 
 
-import com.perguntaCerta.PerguntaCerta.Domain.Model.UserModel
-import com.perguntaCerta.PerguntaCerta.Domain.repository.UserRepository
+import com.perguntaCerta.PerguntaCerta.domain.model.UserModel
+import com.perguntaCerta.PerguntaCerta.domain.repository.UserRepository
 import org.springframework.stereotype.Service
 
 @Service
