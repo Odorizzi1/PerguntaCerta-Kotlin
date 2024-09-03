@@ -31,6 +31,9 @@ dependencies {
 	implementation ("org.flywaydb:flyway-core:8.5.13")
     implementation ("org.flywaydb:flyway-mysql:8.4.4")
 	implementation("org.springframework.boot:spring-boot-starter-validation")
+	testImplementation("io.kotest:kotest-runner-junit5:5.6.2")
+	testImplementation("io.kotest:kotest-assertions-core:5.6.2")
+	testImplementation("io.mockk:mockk:1.13.3")
 
 }
 

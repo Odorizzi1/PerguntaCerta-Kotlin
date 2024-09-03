@@ -1,12 +1,14 @@
 package com.perguntaCerta.PerguntaCerta
 
+import io.kotest.core.spec.style.FunSpec
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
-@SpringBootTest
-class PerguntaCertaApplicationTests {
 
-	@Test
+class PerguntaCertaApplicationTests: FunSpec(
+
+) {
+
 	fun contextLoads() {
 	}
 

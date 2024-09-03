@@ -11,7 +11,6 @@ class UserService(
 ) {
 
     fun createUser(user:UserModel){
-        println("Chamando2")
        this.userRepository.save(user)
     }
 }

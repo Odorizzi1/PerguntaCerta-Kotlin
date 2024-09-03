@@ -23,5 +23,4 @@ class UserController(
            throw UserCreationException("Erro ao criar o usuário: ${e.message}")
        }
     }
-
 }
