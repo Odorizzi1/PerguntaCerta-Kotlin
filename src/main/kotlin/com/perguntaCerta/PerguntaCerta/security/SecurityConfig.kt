@@ -18,6 +18,8 @@ import org.springframework.security.oauth2.jwt.JwtDecoder
 import org.springframework.security.oauth2.jwt.JwtEncoder
 import org.springframework.security.oauth2.jwt.NimbusJwtDecoder
 import org.springframework.security.oauth2.jwt.NimbusJwtEncoder
+import org.springframework.web.cors.CorsConfiguration
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource
 import java.security.interfaces.RSAPrivateKey
 import java.security.interfaces.RSAPublicKey
 
@@ -34,10 +36,11 @@ class SecurityConfig {
     @Bean
     fun securityFilterChain(http: HttpSecurity): SecurityFilterChain {
         http
+            .cors { cors -> cors.configurationSource(corsConfigurationSource()) }
             .authorizeHttpRequests { authorize ->
                 authorize
-                    .requestMatchers("/login").permitAll()  // Permite acesso público à rota /login
-                    .anyRequest().authenticated()  // Requer autenticação para todas as outras rotas
+                    .requestMatchers("/login").permitAll()
+                    .anyRequest().authenticated()
             }
             .csrf { csrf -> csrf.disable() }
             .oauth2ResourceServer { oauth2 ->
@@ -52,6 +55,19 @@ class SecurityConfig {
     @Bean
     fun jwtDecoder(): JwtDecoder {
         return NimbusJwtDecoder.withPublicKey(publicKey).build()
+    }
+
+    @Bean
+    fun corsConfigurationSource(): UrlBasedCorsConfigurationSource {
+        val corsConfig = CorsConfiguration()
+        corsConfig.allowedOrigins = listOf("*")
+        corsConfig.allowedMethods = listOf("GET", "POST", "PUT", "DELETE", "OPTIONS")
+        corsConfig.allowedHeaders = listOf("Authorization", "Content-Type")
+        corsConfig.allowCredentials = false
+
+        val source = UrlBasedCorsConfigurationSource()
+        source.registerCorsConfiguration("/**", corsConfig)
+        return source
     }
 
     @Bean
