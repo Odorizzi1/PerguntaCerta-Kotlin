@@ -1,6 +1,5 @@
 package com.perguntaCerta.PerguntaCerta.Application.Services
 
-
 import com.perguntaCerta.PerguntaCerta.domain.model.UserModel
 import com.perguntaCerta.PerguntaCerta.domain.repository.UserRepository
 import org.springframework.stereotype.Service
@@ -10,7 +9,11 @@ class UserService(
     val userRepository: UserRepository
 ) {
 
-    fun createUser(user:UserModel){
-       this.userRepository.save(user)
+    fun createUser(user: UserModel) {
+        this.userRepository.save(user)
+    }
+
+    fun findByName(name: String): UserModel? {
+        return this.userRepository.findByName(name)
     }
 }

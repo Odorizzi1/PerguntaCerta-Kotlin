@@ -17,11 +17,13 @@ data class UserModel(
     @field:NotBlank(message = "Name is mandatory")
     val name: String,
 
+    @Column
+    var password: String = "",
+
     @field:Email
     @Column(unique = true)
     val email: String
 ) {
 
-    constructor() : this(id = null, name = "", email = "")
+    constructor() : this(id = null, name = "", email = "", password= "")
 }
-//teste commit teste commit

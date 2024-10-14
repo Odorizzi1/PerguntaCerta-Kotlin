@@ -6,5 +6,7 @@ import org.springframework.data.repository.CrudRepository
 
 interface UserRepository : CrudRepository<UserModel,Int>{
 
+    fun findByName(name: String): UserModel?
+
 
 }
