@@ -19,8 +19,8 @@ class UserController(
         userRepository.save(userModel)
     }
 
-    @GetMapping("/list")
-    override fun listUser() {
-        // Lógica para listar usuários
+    @GetMapping("/list/{id}")
+    override fun listUser(@PathVariable id: Int): UserModel {
+        return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
     }
 }

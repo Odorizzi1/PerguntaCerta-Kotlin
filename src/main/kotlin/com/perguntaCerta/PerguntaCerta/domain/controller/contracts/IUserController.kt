@@ -6,5 +6,5 @@ interface IUserController {
 
    fun  create(userModel: UserModel)
 
-   fun listUser()
+   fun listUser(id:Int):UserModel
 }
