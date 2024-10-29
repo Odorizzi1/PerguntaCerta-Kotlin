@@ -39,7 +39,7 @@ class SecurityConfig {
             .cors { cors -> cors.configurationSource(corsConfigurationSource()) }
             .authorizeHttpRequests { authorize ->
                 authorize
-                    .requestMatchers("/login").permitAll()
+                    .requestMatchers("/login", "/users/create").permitAll()
                     .anyRequest().authenticated()
             }
             .csrf { csrf -> csrf.disable() }

@@ -1,4 +1,4 @@
-package com.perguntaCerta.PerguntaCerta.domain.controller.contracts
+package com.perguntaCerta.PerguntaCerta.domain.controller
 
 import com.perguntaCerta.PerguntaCerta.domain.repository.UserRepository
 import org.springframework.security.oauth2.jwt.JwtClaimsSet
