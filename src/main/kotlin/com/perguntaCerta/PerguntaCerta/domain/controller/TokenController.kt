@@ -24,8 +24,6 @@ class TokenController(
     fun login(@RequestBody loginRequest: LoginRequest): ResponseEntity<LoginResponse> {
         val user = userRepository.findByName(loginRequest.userName)
 
-        println(user?.password)
-        println(loginRequest.password)
         if (user == null) {
             throw BadCredentialsException("User not found!")
         }
