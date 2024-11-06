@@ -24,3 +24,102 @@ class UserController(
         return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
     }
 }
+
+//@GetMapping("/list/{id}")
+//override fun listUser(@PathVariable id: Int): UserModel {
+//    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+//} @GetMapping("/list/{id}")
+//override fun listUser(@PathVariable id: Int): UserModel {
+//    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+//} @GetMapping("/list/{id}")
+//override fun listUser(@PathVariable id: Int): UserModel {
+//    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+//} @GetMapping("/list/{id}")
+//override fun listUser(@PathVariable id: Int): UserModel {
+//    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+//} @GetMapping("/list/{id}")
+//override fun listUser(@PathVariable id: Int): UserModel {
+//    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+//} @GetMapping("/list/{id}")
+//override fun listUser(@PathVariable id: Int): UserModel {
+//    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+//} @GetMapping("/list/{id}")
+//override fun listUser(@PathVariable id: Int): UserModel {
+//    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+//} @GetMapping("/list/{id}")
+//override fun listUser(@PathVariable id: Int): UserModel {
+//    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+//}
+//@GetMapping("/list/{id}")
+//override fun listUser(@PathVariable id: Int): UserModel {
+//    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+//} @GetMapping("/list/{id}")
+//override fun listUser(@PathVariable id: Int): UserModel {
+//    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+//} @GetMapping("/list/{id}")
+//override fun listUser(@PathVariable id: Int): UserModel {
+//    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+//} @GetMapping("/list/{id}")
+//override fun listUser(@PathVariable id: Int): UserModel {
+//    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+//} @GetMapping("/list/{id}")
+//override fun listUser(@PathVariable id: Int): UserModel {
+//    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+//} @GetMapping("/list/{id}")
+//override fun listUser(@PathVariable id: Int): UserModel {
+//    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+//} @GetMapping("/list/{id}")
+//override fun listUser(@PathVariable id: Int): UserModel {
+//    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+//} @GetMapping("/list/{id}")
+//override fun listUser(@PathVariable id: Int): UserModel {
+//    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+//}//@GetMapping("/list/{id}")
+////override fun listUser(@PathVariable id: Int): UserModel {
+////    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+////} @GetMapping("/list/{id}")
+////override fun listUser(@PathVariable id: Int): UserModel {
+////    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+////} @GetMapping("/list/{id}")
+////override fun listUser(@PathVariable id: Int): UserModel {
+////    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+////} @GetMapping("/list/{id}")
+////override fun listUser(@PathVariable id: Int): UserModel {
+////    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+////} @GetMapping("/list/{id}")
+////override fun listUser(@PathVariable id: Int): UserModel {
+////    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+////} @GetMapping("/list/{id}")
+////override fun listUser(@PathVariable id: Int): UserModel {
+////    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+////} @GetMapping("/list/{id}")
+////override fun listUser(@PathVariable id: Int): UserModel {
+////    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+////} @GetMapping("/list/{id}")
+////override fun listUser(@PathVariable id: Int): UserModel {
+////    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+////}//@GetMapping("/list/{id}")
+////override fun listUser(@PathVariable id: Int): UserModel {
+////    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+////} @GetMapping("/list/{id}")
+////override fun listUser(@PathVariable id: Int): UserModel {
+////    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+////} @GetMapping("/list/{id}")
+////override fun listUser(@PathVariable id: Int): UserModel {
+////    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+////} @GetMapping("/list/{id}")
+////override fun listUser(@PathVariable id: Int): UserModel {
+////    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+////} @GetMapping("/list/{id}")
+////override fun listUser(@PathVariable id: Int): UserModel {
+////    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+////} @GetMapping("/list/{id}")
+////override fun listUser(@PathVariable id: Int): UserModel {
+////    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+////} @GetMapping("/list/{id}")
+////override fun listUser(@PathVariable id: Int): UserModel {
+////    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+////} @GetMapping("/list/{id}")
+////override fun listUser(@PathVariable id: Int): UserModel {
+////    return userRepository.findById(id).orElseThrow { NoSuchElementException("Usuário não encontrado") }
+////}
