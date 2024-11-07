@@ -23,17 +23,15 @@ dependencies {
 	implementation("com.nimbusds:nimbus-jose-jwt:9.22")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	implementation("com.nimbusds:nimbus-jose-jwt:9.22")
-	runtimeOnly("mysql:mysql-connector-java:8.0.31")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.flywaydb:flyway-core:8.5.13")
-	implementation("org.flywaydb:flyway-mysql:8.4.4")
 	implementation("org.springframework.boot:spring-boot-starter-validation")
 	implementation("io.github.cdimascio:dotenv-kotlin:6.2.2")
 	implementation("org.springframework.boot:spring-boot-starter-security")
 	implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.security:spring-security-oauth2-jose")
+	runtimeOnly("org.postgresql:postgresql:42.3.1")
 
 	// Test dependencies
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
