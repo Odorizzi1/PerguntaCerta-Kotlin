@@ -8,5 +8,4 @@ interface UserRepository : CrudRepository<UserModel,Int>{
 
     fun findByName(name: String): UserModel?
 
-
 }
