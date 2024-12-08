@@ -44,7 +44,7 @@ class TokenController(
 
         val jwtValue = jwtEncoder.encode(JwtEncoderParameters.from(claims)).tokenValue
 
-        return ResponseEntity.ok(LoginResponse(jwtValue, expiresIn))
+        return ResponseEntity.ok(LoginResponse(jwtValue, expiresIn, user.id))
     }
 
     data class LoginRequest(
@@ -54,6 +54,7 @@ class TokenController(
 
     data class LoginResponse(
         val jwt: String,
-        val expiresIn: Long
+        val expiresIn: Long,
+        val userId: Int?
     )
 }

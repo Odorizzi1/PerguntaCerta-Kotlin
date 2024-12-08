@@ -60,10 +60,10 @@ class SecurityConfig {
     @Bean
     fun corsConfigurationSource(): UrlBasedCorsConfigurationSource {
         val corsConfig = CorsConfiguration()
-        corsConfig.allowedOrigins = listOf("*")
+        corsConfig.allowedOrigins = listOf("https://pergunta-certa.vercel.app", "http://localhost:5173")
         corsConfig.allowedMethods = listOf("GET", "POST", "PUT", "DELETE", "OPTIONS")
         corsConfig.allowedHeaders = listOf("Authorization", "Content-Type")
-        corsConfig.allowCredentials = false
+        corsConfig.allowCredentials = true
 
         val source = UrlBasedCorsConfigurationSource()
         source.registerCorsConfiguration("/**", corsConfig)

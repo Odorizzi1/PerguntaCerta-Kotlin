@@ -10,4 +10,6 @@ interface IUserController {
    fun listUser(id:Int):UserModel
 
    fun createUserInfo(userInfoModel: UserInfoModel):UserInfoModel
+
+   fun getUserInfo(userId:Int): UserInfoModel
 }

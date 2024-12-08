@@ -14,9 +14,10 @@ data class UserInfoModel(
 
     var lastname: String = "",
 
-    @Column(name = "user_id", nullable = false)
+    @Column(name = "userId")
     val userId: Int
+
 ){
-    constructor() : this(null, "", "", 0)
+    constructor() : this(null, "", "",0)
 }
 

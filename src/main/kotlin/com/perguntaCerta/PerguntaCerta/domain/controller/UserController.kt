@@ -33,7 +33,7 @@ class UserController(
     }
 
     @GetMapping("/userinfo")
-    fun getUserInfo(@RequestParam userId: Int): UserInfoModel {
+    override fun getUserInfo(@RequestParam userId: Int): UserInfoModel {
         return userInfoRepository.findByUserId(userId)
     }
 
