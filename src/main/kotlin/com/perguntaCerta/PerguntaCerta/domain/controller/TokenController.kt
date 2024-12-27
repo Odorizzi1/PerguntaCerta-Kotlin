@@ -33,7 +33,7 @@ class TokenController(
         }
 
         val now = Instant.now()
-        val expiresIn = 300L
+        val expiresIn = 86400L
 
         val claims = JwtClaimsSet.builder()
             .issuer("mybackend")
